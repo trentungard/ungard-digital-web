@@ -4,7 +4,7 @@ import HeroPost from '../components/hero-post';
 import Intro from '../components/intro';
 import { Header } from '../components/Headers';
 import Hero from '../components/Hero';
-import { Layout } from '../components/layout';
+import { Layout } from '../components/Layout';
 import { getAllPostsForHome } from '../lib/api';
 import Head from 'next/head';
 import { CMS_NAME } from '../lib/constants';
