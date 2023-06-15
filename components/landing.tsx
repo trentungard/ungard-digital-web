@@ -1,4 +1,4 @@
-import Layout from './layout'
+import { Layout } from '../components/Layout';
 import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Container from './container'

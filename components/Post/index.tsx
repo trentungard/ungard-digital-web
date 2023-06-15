@@ -1,6 +1,6 @@
 import {imageBuilder} from '../../lib/sanity';
 
-export const Post = ({author, className, excerpt, imgSrc, title}) => {
+export const Post = ({author, className, excerpt, imgSrc, title}: any) => {
     return (
         <div className={className}>
             <img className='w-full h-lg flex-wrap' src={`${imageBuilder(imgSrc)}`} />

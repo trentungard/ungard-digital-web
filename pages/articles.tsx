@@ -1,5 +1,5 @@
 import { getAllPostsForHome } from '../lib/api';
-import { Post } from '../components/post';
+import { Post } from '../components/Post';
 import { ContentContainer } from '../components/ContentContainer';
 import { Header } from '../components/Headers';
 import { Footer } from '../components/Footers';
