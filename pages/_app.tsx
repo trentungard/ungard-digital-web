@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import { useState } from 'react'
 import { ComingSoon } from '../components/ComingSoon';
-import { MaintenanceMode } from '../components/MaintenanceMode';
 import '../styles/index.css'
 
 function MyApp({ Component, pageProps }) {
