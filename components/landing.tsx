@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Container from './container'
 import Intro from './intro'
-import HeroPost from './hero-post'
+import HeroPost from './RecentPosts'
 import MoreStories from './more-stories'
 
 export default function Landing({ allPosts, preview }) {
