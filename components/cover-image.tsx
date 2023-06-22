@@ -28,7 +28,7 @@ export default function CoverImage({ title, url, imageObject, slug, priority = f
   return (
     <>
       {slug ? (
-        <Link aria-label={title} as={`/posts/${slug}`} href="/posts/[slug]">
+        <Link aria-label={title} as={`/articles/${slug}`} href="/articles/[slug]">
           {image}
         </Link>
       ) : (

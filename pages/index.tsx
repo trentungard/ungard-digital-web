@@ -10,6 +10,7 @@ import { MaintenanceMode } from '../components/MaintenanceMode';
 import { ArrowRight } from "../components/icons/ArrowRight";
 import RecentPosts from '../components/RecentPosts';
 import { all } from 'axios';
+import NextLink from 'next/link';
 
 export default function Index({ allPosts, preview }) {
   return ( 
@@ -58,10 +59,10 @@ export default function Index({ allPosts, preview }) {
                 allPosts={allPosts}
               />
           )}
-          <a className='text-xl m-auto p-4 flex gap-2 items-center hover:cursor-pointer hover:text-gray-500'>
+          <NextLink href= '/articles'className='text-xl m-auto p-4 flex gap-2 items-center hover:cursor-pointer hover:text-gray-500'>
             View All Articles
             <ArrowRight width={20} />
-          </a>
+          </NextLink>
         </ContentContainer>
       </section>
     </Layout>

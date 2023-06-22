@@ -3,3 +3,12 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+article > div > h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+article > div > ul > li {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
