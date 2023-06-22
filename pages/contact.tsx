@@ -12,9 +12,7 @@ export default function Contact(){
             <Header />
             <TitleSection title={title} description={description} />
             <ContentContainer className='py-20'>
-                <div>
-                    <ContactForm />
-                </div>
+                <ContactForm />
             </ContentContainer>
             <Footer />
         </>

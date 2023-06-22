@@ -14,5 +14,6 @@ exports.colors = {
     "gray-500": '#9c9c9f',
     moonbeam: "#292B4D",
     "high yellow": "#F9F871",
-    "primary": "#1A2027"
+    "primary": "#1A2027",
+    "off-white": "#F1F5F7"
 }
