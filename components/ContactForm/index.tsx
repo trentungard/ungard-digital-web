@@ -63,9 +63,13 @@ export const ContactForm = () => {
           });
       };
     return (
-      <div className='flex justify-around py-5'>
+      <div className='flex flex-col md:flex-row justify-around py-5'>
+        <div className='flex-auto max-w-lg mb-10 justify-between'>
+            <h2 className='text-4xl font-bold pb-5'>Let us know how we can help.</h2>
+            <p className='text-lg leading-loose'>Whatever your business needs, we are here to help. Whether you're a large company that needs a custom Ecommerce solution or a small business that just needs a brochure site; we navigate the digital landscape for your business so that you can focus on what matters most. Tell us how we can help!</p>
+        </div>
         <div className='flex-auto'>
-            <form className='border text-lg shadow-md flex flex-col gap-3 p-3 max-w-lg w-full rounded py-7' onSubmit={handleOnSubmit}>
+            <form className='border text-lg shadow-md flex flex-col gap-3 p-3 max-w-lg w-full rounded py-7 mx-auto' onSubmit={handleOnSubmit}>
                 <label className='font-bold my-1' htmlFor="email">Email (required)</label>
                 <input
                   className='border-2 rounded' 
@@ -106,10 +110,6 @@ export const ContactForm = () => {
                 <div className="error">Error: {status.info.msg}</div>
             )}
             <p className='mt-3 text-xl'>{!status.info.error && status.info.msg && <p>{status.info.msg}</p>}</p>
-        </div>
-        <div className='flex-auto max-w-lg'>
-            <h2 className='text-4xl font-bold pb-5'>Let us know how we can help.</h2>
-            <p className='text-lg leading-loose'>Whatever your business needs, we are here to help. Whether you're a large company that needs a custom Ecommerce solution or a small business that just needs a brochure site; we navigate the digital landscape for your business so that you can focus on what matters most. Tell us how we can help!</p>
         </div>
       </div>
     )
