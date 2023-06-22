@@ -6,7 +6,7 @@ export const Layout = ({ preview, children }) => {
   return (
     <>
       <Meta />
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-off-white">
         <main>{children}</main>
       </div>
       <Footer />

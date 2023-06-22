@@ -14,21 +14,21 @@ export const Footer = () => {
           <p className='text-4xl font-light w-full my-5 mx-auto'>Bringing the power of technology to your business.</p>
         </div>
         <div className='flex items-start gap-10 w-full justify-between md:justify-end'>
-          <div>
+          {/* <div>
             <h4 className='text-2xl'>Company</h4>
             <ul className='font-light text-lg'>
               <li className='my-2'>About</li>
               <li className='my-2'>Contact</li>
               <li className='my-2'>News</li>
             </ul>
-          </div>
+          </div> */}
           <div>
-            <h4 className='text-2xl'>Other</h4>
+            {/* <h4 className='text-2xl'>Other</h4>
             <ul className='font-light text-lg'>
               <li className='my-2'>Terms and Conditions</li>
               <li className='my-2'>Privacy Policy</li>
               <li className='my-2'>Customer Disclaimer</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </ContentContainer>

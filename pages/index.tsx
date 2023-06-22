@@ -1,7 +1,3 @@
-import Container from '../components/container';
-import MoreStories from '../components/more-stories';
-import HeroPost from '../components/hero-post';
-import Intro from '../components/intro';
 import { Header } from '../components/Headers';
 import Hero from '../components/Hero';
 import { Layout } from '../components/Layout';
@@ -12,10 +8,11 @@ import { ContentContainer } from '../components/ContentContainer';
 import ungardDigitalOne from '../public/ungard-digital-one.png';
 import { MaintenanceMode } from '../components/MaintenanceMode';
 import { ArrowRight } from "../components/icons/ArrowRight";
+import RecentPosts from '../components/RecentPosts';
+import { all } from 'axios';
+import NextLink from 'next/link';
 
 export default function Index({ allPosts, preview }) {
-  const heroPost = allPosts[0]
-  const morePosts = [allPosts[1], allPosts[2], allPosts[3]]
   return ( 
     <Layout preview={preview}>
       <Head>
@@ -56,27 +53,16 @@ export default function Index({ allPosts, preview }) {
       </section>
       <section className='py-20 bg-kinda-white'>
         <ContentContainer className='flex flex-col gap-5'>
-          {heroPost && (
-              <HeroPost
-                title={heroPost.title}
-                coverImage={heroPost.coverImage}
-                date={heroPost.date}
-                author={heroPost.author}
-                slug={heroPost.slug}
-                excerpt={heroPost.excerpt}
+          <h2 className='text-4xl font-bold max-w-2xl leading-relaxed'>Want To DIY? We Can Help With That Too! See Our Educational Resources Below.</h2>
+          {allPosts && (
+              <RecentPosts
+                allPosts={allPosts}
               />
           )}
-          <div className='grid grid-rows-3 lg:grid-rows-2 grid-cols-1 lg:grid-cols-2  gap-5 lg:max-h-[500px] pb-5 auto-rows-max'>
-            {morePosts && (
-              <MoreStories 
-                posts={morePosts}
-              />
-            )}
-          </div>
-          <a className='text-xl m-auto p-4 flex gap-2 items-center hover:cursor-pointer hover:text-gray-500'>
+          <NextLink href= '/articles'className='text-xl m-auto p-4 flex gap-2 items-center hover:cursor-pointer hover:text-gray-500'>
             View All Articles
             <ArrowRight width={20} />
-          </a>
+          </NextLink>
         </ContentContainer>
       </section>
     </Layout>
