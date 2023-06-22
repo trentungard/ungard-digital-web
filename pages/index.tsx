@@ -58,13 +58,6 @@ export default function Index({ allPosts, preview }) {
                 allPosts={allPosts}
               />
           )}
-          {/* <div className='grid grid-rows-3 lg:grid-rows-2 grid-cols-1 lg:grid-cols-2  gap-5 lg:max-h-[500px] pb-5 auto-rows-max'>
-            {morePosts && (
-              <MoreStories 
-                posts={morePosts}
-              />
-            )}
-          </div> */}
           <a className='text-xl m-auto p-4 flex gap-2 items-center hover:cursor-pointer hover:text-gray-500'>
             View All Articles
             <ArrowRight width={20} />

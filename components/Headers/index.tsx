@@ -22,9 +22,9 @@ export const Header = () => {
             <Link href='/articles'>
               <li className="cursor-pointer hover:text-ungard-blue">Articles</li>
             </Link>
-            <Link href='/services'>
+            {/* <Link href='/services'>
               <li className="cursor-pointer hover:text-ungard-blue">Services</li>
-            </Link>
+            </Link> */}
             <Link href='/contact'>
               <li className="cursor-pointer hover:text-ungard-blue">Contact</li>
             </Link>
