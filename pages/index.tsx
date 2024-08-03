@@ -3,13 +3,10 @@ import Hero from '../components/Hero';
 import { Layout } from '../components/Layout';
 import { getAllPostsForHome } from '../lib/api';
 import Head from 'next/head';
-import { CMS_NAME } from '../lib/constants';
 import { ContentContainer } from '../components/ContentContainer';
 import ungardDigitalOne from '../public/ungard-digital-one.png';
-import { MaintenanceMode } from '../components/MaintenanceMode';
 import { ArrowRight } from "../components/icons/ArrowRight";
 import RecentPosts from '../components/RecentPosts';
-import { all } from 'axios';
 import NextLink from 'next/link';
 
 export default function Index({ allPosts, preview }) {
