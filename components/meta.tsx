@@ -34,7 +34,7 @@ export default function Meta() {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Affordable software engineering based out of Williamsport, serving the greater Lycoming County area`}
+        content="Affordable software engineering & web development based out of Williamsport, serving the greater Lycoming County area"
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} key="ogImage" />
     </Head>
