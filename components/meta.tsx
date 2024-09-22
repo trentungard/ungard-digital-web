@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { CMS_NAME, HOME_OG_IMAGE_URL } from '../lib/constants'
+import { HOME_OG_IMAGE_URL } from '../lib/constants'
 
 export default function Meta() {
   return (
@@ -37,6 +37,9 @@ export default function Meta() {
         content="Affordable software engineering & web development based out of Williamsport, serving the greater Lycoming County area"
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} key="ogImage" />
+      <meta property="og:title" content="Ungard Digital | Affordable Software Solutions" />
+      <meta property="og:description" content="Affordable software engineering & web development based out of Williamsport, serving the greater Lycoming County area" />
+      <meta property="og:type" content="website" />
     </Head>
   )
 }
