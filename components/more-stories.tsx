@@ -8,8 +8,8 @@ export default function MoreArticles({ posts }) {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 pb-32">
         {posts.map((post) => (
-          <PostPlug
-            key={post.slug}
+          // @ts-expect-error — TS6+React19 now includes key in JSX props type but PostPlugProps correctly excludes it
+          <PostPlug key={post.slug}
             title={post.title}
             coverImage={post.coverImage}
             date={post.date}

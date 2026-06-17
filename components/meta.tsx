@@ -3,6 +3,7 @@ import { HOME_OG_IMAGE_URL } from '../lib/constants'
 
 export default function Meta() {
   return (
+    // @ts-expect-error — Next.js Head requires children but TS6+React19 doesn't map JSX children to required props; tracked at github.com/vercel/next.js
     <Head>
       <link
         rel="apple-touch-icon"

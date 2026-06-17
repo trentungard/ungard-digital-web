@@ -3,6 +3,15 @@ import Date from './date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 
+interface PostPlugProps {
+  title: string
+  coverImage: any
+  date: string
+  excerpt: string
+  author?: { name: string; picture: string }
+  slug: string
+}
+
 export default function PostPlug({
   title,
   coverImage,
@@ -10,7 +19,7 @@ export default function PostPlug({
   excerpt,
   author,
   slug,
-}) {
+}: PostPlugProps) {
   return (
     <div>
       <div className="mb-5">

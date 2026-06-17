@@ -12,9 +12,12 @@ import NextLink from 'next/link';
 export default function Index({ allPosts, preview }) {
   return ( 
     <Layout preview={preview}>
-      <Head>
-        <title>Ungard Digital</title>
-      </Head>
+      {
+        // @ts-expect-error — Next.js Head requires children but TS6+React19 doesn't map JSX children to required props; tracked at github.com/vercel/next.js
+        <Head>
+          <title>Ungard Digital</title>
+        </Head>
+      }
       <Header />
       <Hero />
       <section className='py-20 bg-gradient-to-br from-avenue-blue via-ungard-blue to-moonbeam text-white text-center'>

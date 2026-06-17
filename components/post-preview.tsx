@@ -1,10 +1,7 @@
-import { usePreview } from '../lib/sanity'
-import { postQuery } from '../lib/queries'
 import { Post } from './Post'
 
+// Real-time preview was removed when next-sanity dropped definePreview in v5.
+// This component is unused — preview prop falls back to static data.
 export default function PostPreview({ data }) {
-  const slug = data?.post?.slug;
-  const previewData = usePreview(null, postQuery, { slug });
-  const { post } = data;
-  return <Post data={previewData ?? post} preview />
+  return <Post data={data?.post} preview />
 }
