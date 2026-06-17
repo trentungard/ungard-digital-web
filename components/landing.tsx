@@ -11,9 +11,12 @@ export default function Landing({ allPosts, preview }) {
   return (
     <>
       <Layout preview={preview}>
-        <Head>
-          <title>Ungard Digital | Landing</title>
-        </Head>
+        {
+          // @ts-expect-error — Next.js Head requires children but TS6+React19 doesn't map JSX children to required props; tracked at github.com/vercel/next.js
+          <Head>
+            <title>Ungard Digital | Landing</title>
+          </Head>
+        }
         <Container>
           <Intro />
           {allPosts && (

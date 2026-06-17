@@ -28,12 +28,15 @@ export default function Post({ post, allPosts, preview }) {
         ) : (
           <>
             <article>
-              <Head>
-                <title>
-                  {post.title} | Ungard Digital
-                </title>
-                {/* <meta property="og:image" content={post.ogImage.url} /> */}
-              </Head>
+              {
+                // @ts-expect-error — Next.js Head requires children but TS6+React19 doesn't map JSX children to required props; tracked at github.com/vercel/next.js
+                <Head>
+                  <title>
+                    {post.title} | Ungard Digital
+                  </title>
+                  {/* <meta property="og:image" content={post.ogImage.url} /> */}
+                </Head>
+              }
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}

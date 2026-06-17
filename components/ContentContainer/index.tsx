@@ -1,6 +1,8 @@
+import { type ReactNode } from 'react'
+
 interface ContentContainerProps {
     className?: string;
-    children: any;
+    children?: ReactNode;
 }
 
 export const ContentContainer = ({className, children}: ContentContainerProps) => {
